@@ -67,6 +67,7 @@
 #define PICO_EXT_GPIO_IOMUX_HOBBIT &pinctrl_ext_gpio_hobbit
 #define PICO_EXT_GPIO_IOMUX_PI &pinctrl_ext_gpio_pi
 #define PICO_EXT_GPIO_IOMUX_NYMPH &pinctrl_ext_gpio_nymph
+#define PICO_PCIE pcie
 
 /* GPIO LED */
 #define PICO_EXT_GPIOLED_IOMUX_HOBBIT &pinctrl_ext_gpioled_hobbit
@@ -1021,6 +1022,5 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_pcie>;
 	reset-gpio = <&gpio2 1 GPIO_ACTIVE_LOW>;
-	status = "okay";
 };
 

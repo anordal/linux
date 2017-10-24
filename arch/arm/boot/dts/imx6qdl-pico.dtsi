@@ -36,6 +36,7 @@
 
 #define PICO_EXT_GPIOLED_IOMUX_HOBBIT &pinctrl_ext_gpioled_hobbit
 #define PICO_EXT_GPIOLED_IOMUX_PI &pinctrl_ext_gpioled_pi
+#define PICO_PCIE pcie
 
 /* audio codec */
 #define PICO_AUD_I2S_CHANNEL ssi1
@@ -741,7 +742,6 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_pcie_reset>;
 	reset-gpio = <&gpio5 21 0>;
-	status = "okay";
 };
 
 &pwm1 {

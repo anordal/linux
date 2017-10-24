@@ -127,3 +127,8 @@
 	};
 };
 
+#ifdef PICO_PCIE
+&PICO_PCIE {
+	status = "okay";
+};
+#endif
